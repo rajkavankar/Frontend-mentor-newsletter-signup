@@ -1,0 +1,15 @@
+{
+  "name": "newsletter-signup",
+  "version": "1.0.0",
+  "description": "Responsive design of register form challenge from frontend mentor",
+  "main": "script.js",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/tailwind.css -o ./public/style.css",
+    "tailwind-watch": "tailwindcss -i ./src/tailwind.css -o ./public/style.css --watch"
+  },
+  "author": "Raj kavankar",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
