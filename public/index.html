@@ -11,43 +11,78 @@
     <link rel="stylesheet" href="style.css" />
     <title>News Letter</title>
   </head>
-  <body>
-    <main class="flex flex-col">
-      <img src="./images/illustration-sign-up-mobile.svg" alt="hero" />
-      <div class="p-10">
-        <h1 class="text-4xl font-bold">Stay updated!</h1>
-        <p class="text-md mt-3 block">
+  <body
+    class="lg:bg-darkGrey lg:flex lg:justify-center lg:items-center lg:h-screen"
+  >
+    <main
+      class="flex lg:pr-0 flex-col lg:flex-row-reverse lg:bg-white lg:rounded-xl lg:w-1/2 lg:shadow-lg"
+    >
+      <img
+        class="lg:hidden"
+        src="./images/illustration-sign-up-mobile.svg"
+        alt="hero"
+      />
+      <div class="hidden lg:block lg:items-center h-full py-3 pr-3">
+        <img
+          class="h-[50%] w-full"
+          src="./images/illustration-sign-up-desktop.svg"
+          alt="hero"
+        />
+      </div>
+      <div class="p-10 flex flex-col justify-center">
+        <h1 class="text-4xl lg:text-3xl font-bold">Stay updated!</h1>
+        <p class="text-md lg:text-sm mt-3 lg:mb-2 block">
           Join 60,000+ product managers receiving monthly updates on:
         </p>
 
-        <ul class="pb-9 pt-5 flex flex-col space-y-3">
-          <li class="flex justify-between">
-            <img class="mr-4" src="images/icon-list.svg" alt="list" />
-            <p class="mr-auto">Product discovery and building what matters</p>
+        <ul
+          class="pb-9 lg:pb-2 pt-5 lg:pt-1 flex flex-col space-y-3 lg:space-y-1.5"
+        >
+          <li class="flex justify-between items-center">
+            <img
+              class="mr-4 lg:mr-2 lg:h-3"
+              src="images/icon-list.svg"
+              alt="list"
+            />
+            <p class="mr-auto lg:text-xs">
+              Product discovery and building what matters
+            </p>
           </li>
           <li class="flex justify-between items-center">
-            <img class="mr-4" src="images/icon-list.svg" alt="list" />
-            <p class="mr-auto">Measuring to ensure updates are a success</p>
+            <img
+              class="mr-4 lg:mr-2 lg:h-3"
+              src="images/icon-list.svg"
+              alt="list"
+            />
+            <p class="mr-auto lg:text-xs">
+              Measuring to ensure updates are a success
+            </p>
           </li>
           <li class="flex justify-between items-center">
-            <img class="mr-4" src="images/icon-list.svg" alt="list" />
-            <p class="mr-auto">And much more!</p>
+            <img
+              class="mr-4 lg:mr-2 lg:h-3"
+              src="images/icon-list.svg"
+              alt="list"
+            />
+            <p class="mr-auto lg:text-xs">And much more!</p>
           </li>
         </ul>
 
-        <form>
-          <label class="block text-darkGrey font-bold mb-2 text-sm" for="email"
+        <form class="lg:mt-3">
+          <label
+            class="block text-darkGrey font-bold mb-2 lg:mb-1 text-sm lg:text-[0.65rem]"
+            for="email"
             >Email address</label
           >
           <input
-            class="block w-full pl-4 focus:outline-0 ring-1 ring-regularGrey rounded-md py-3"
+            class="block w-full pl-4 focus:outline-0 ring-1 ring-regularGrey placeholder:lg:text-xs rounded-md lg:rounded py-3 lg:py-1 lg:font-sm font-semi-bold"
             type="email"
             name="email"
             id="email"
             placeholder="email@company.com"
           />
           <button
-            class="block mt-5 mx-auto py-3 px-2 w-full bg-darkGrey text-white rounded-md"
+            class="block mt-5 lg:mt-3 mx-auto py-3 lg:py-3 px-2 lg:px-1 w-full bg-darkGrey text-white rounded-md lg:text-[0.65rem] transition-all duration-1000 hover:lg:bg-gradient-to-r hover:lg:from-tomato hover:lg:to-amber-300"
           >
             Subscribe to monthly newsletter
           </button>
