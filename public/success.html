@@ -30,11 +30,12 @@
         </h1>
         <p class="text-lg mt-3 lg:text-sm lg:mb-3 block">
           A confirmation email has been sent to
-          <span class="font-bold">ash@loremcompany.com</span>. Please open it
-          and click the button inside to confirm your subscription.
+          <span id="mail-success" class="font-bold"></span>. Please open it and
+          click the button inside to confirm your subscription.
         </p>
 
         <button
+          id="dismiss-btn"
           class="block mt-56 lg:mt-3 mx-auto py-3 lg:py-3 px-2 lg:px-1 w-full bg-darkGrey text-white rounded-md lg:text-xs transition-all duration-1000 hover:lg:bg-gradient-to-r hover:lg:from-tomato hover:lg:to-amber-300"
         >
           Dismiss message
@@ -42,5 +43,13 @@
       </div>
     </main>
   </body>
-  <script src="script.js"></script>
+  <script>
+    document.querySelector("#mail-success").textContent =
+      localStorage.getItem("email")
+
+    document.querySelector("#dismiss-btn").addEventListener("click", () => {
+      localStorage.removeItem("email")
+      location.href = "index.html"
+    })
+  </script>
 </html>
